@@ -1,0 +1,8 @@
+//通常、Javaで外部コマンドを起動する方法は以下の方法で行えます。
+
+  Runtime r = Runtime.getRuntime();
+  r.exec("実行するコマンド名");
+
+//また、起動した外部コマンドのリターン値を取得するには、java.lang.ProcessのwaitFor()を実行します。
+  Process p = Runtime.getRuntime().exec("実行するコマンド名");
+  int ret = p.waitFor();
